@@ -1,8 +1,9 @@
+/* Base Styles */
 html, body {
-    margin: 10px;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
     height: 100%;
-    font-family: CustomFont;
+    font-family: CustomFont, sans-serif;
     background-color: black;
     background-attachment: fixed;
     background-size: cover;
@@ -15,6 +16,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Neon Strips */
 #neon-strips {
     position: absolute;
     top: 0;
@@ -49,264 +51,160 @@ html {
     top: 40px;
 }
 
+/* Title Section */
 #Title {
     color: white;
-    font-size: 60px;
-    font-family: 'CustomFont', sans-serif;
+    font-size: 3rem; /* Reduced for smaller screens */
     text-align: center;
-    position: relative;
-    letter-spacing: 2rem;
-    float: left;
-    padding: 200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    letter-spacing: 0.5rem;
 }
 
 #Title a {
     color: white;
     text-decoration: none;
-    transition: color 1s ease; /* Smooth transition for hover effect */
+    transition: color 1s ease;
 }
 
 #Title a:hover {
-    color: rgb(255, 157, 0); /* Hover color */
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 157, 0);
 }
 
-
+/* Custom Fonts */
 @font-face {
     font-family: 'CustomFont';
     src: url('./RozanovaGEO-Demo-Thin.otf');
 }
 
+@font-face {
+    font-family: 'Live';
+    src: url(./Britanica-Black\ Regular.ttf);
+}
+
+/* Header */
 .head {
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0),rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0));
-    height: 500px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.66));
+    height: 80px;
     width: 100%;
     position: fixed;
     top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 0 1rem;
     z-index: 2;
 }
 
+/* Responsive Text */
 #Ziya {
-    color: white;
-    font-size: 5rem;
-    font-family: CustomFont;
-    letter-spacing: 1px;
-    text-align: center;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    z-index: 2;
     color: rgb(255, 157, 0);
-    font-size: 60px;
-    font-family: 'CustomFont', sans-serif;
+    font-size: 2.5rem; /* Adjusted for responsiveness */
     text-align: center;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    position: relative;
-    letter-spacing: 2rem;
+    letter-spacing: 0.3rem;
 }
 
-.foot {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 1rem;
-    position: relative;
-    width: 100%;
-    bottom: 0;
-    z-index: 2;
-}
+/* Footer */
 .footer {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
     color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
     padding: 1rem;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
     z-index: 2;
-    height: 400px;
-    
-
-
-    background-image: linear-gradient(to top, rgba(0, 0, 0,1), rgba(0, 0, 0, 0));
-    height: 400px;
-    width: 100%;
-    position: relative;
-    bottom: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 10px;
-    z-index: 2;
+    justify-content: center;
+    flex-wrap: wrap; /* Wrap content on smaller screens */
 }
 
-
-.logo {
-    height: 75px;
-}
-
-.icons {
-    padding:350px;
-    display: flex;
-    gap: 150px;
-    align-items: center;
-    float:right;
-    margin-left: 100px;
-
-}
-
-#about, #achievements, #impact, #notableworks, #upcomingevents {
-    padding: 100px;
-    color: white;
-    text-align: center;
-}
-
-.about, .achievements, .impact, .notablework, .upcomingevents {
-    padding: 100px;
-    color: white;
-    text-align: center;
-
-}
-
-
-
-.buttons {
-    margin-top: 10px;
-    width: 50%;
-    height: 100%;
-    float: left;
-}
-
-.empty-space {
-    height: 1500px;
-}
-
-.buttonRight {
-    text-align: center;
-    margin: 100px 0;
-    position: relative;
-    right: 2000px;
-    top:-1000px;
-}
-
-.buttonRight a {
-    text-decoration: none;
-}
-
+/* Buttons */
 .buttonRight button {
     background-color: transparent;
     color: white;
-    font-size: 5rem;
+    font-size: 1.5rem;
     font-family: CustomFont;
-    padding: 10px 10px;
+    padding: 1rem 2rem;
     border: solid 1px;
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s ease;
-    width: 100%;
-    max-width: 1000px;
-    height: 200px;
-    margin: 0 auto;
-    position: relative;
-    top: 400px;
-}
-hr {
-    border: dotted 0.1px rgb(255, 157, 0);
-    width: 100%; /* Adjusted for responsiveness */
-    max-width: 90%; /* Optional: To limit the maximum width */
-    margin: 10px auto; /* Center it horizontally */
-    z-index: 2;
-    position: relative; /* Ensure it's positioned properly */
+    max-width: 90%; /* Limit width for smaller screens */
+    margin: 1rem auto;
 }
 
 .buttonRight button:hover {
-    background-color: linear-gradient(to bottom, rgb(181, 28, 28), rgba(0, 0, 0, 0));
-    opacity: 0.7;
+    background-color: rgba(181, 28, 28, 0.7);
     box-shadow: 0 0 10px rgba(255, 200, 200, 0.8);
 }
 
-.buttonRight button:active {
-    background-color: black;
-    opacity: 0.3;
+/* Content Sections */
+#about, #achievements, #impact, #notableworks, #upcomingevents {
+    padding: 2rem;
+    color: white;
+    text-align: center;
 }
 
-.about{
-    font-size: 5rem;
-    font-family: CustomFont;
-    overflow:auto;
-}
-
-.achievements{
-    font-size: 5rem;
-    font-family: CustomFont;
-    overflow: auto;
-    background-image: url('./—Pngtree—academy\ awards\ and\ oscar_14906515.png'); /* Replace with the path to your image */
-    background-size: contain; /* Makes the image cover the entire div */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; ;/* Prevents the image from repeating */
-}
+/* Video Container */
 .video-container {
-    justify-content: center; /* Centers the video horizontally */ /* Adds spacing above and below */
-    width: 50%;
-    float:left; /* Allows the container to expand  /* Pushes the video further down */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
 }
 
 .video-container iframe {
-    width: 475%;
-    max-width: 5631px;
-    height: 3169px;
-    border: solid 0.1PX rgb(255, 157, 0);
-    border-radius: 97px;
-    position: relative;
-    top: 482px;
-    left: 145px;
+    width: 100%;
+    max-width: 800px; /* Limit the max width */
+    height: auto; /* Adjust height proportionally */
+    border: solid 2px rgb(255, 157, 0);
+    border-radius: 20px;
 }
 
-#imgg {
-    margin-top: 677px;
-    float: left;
-    border-radius: 250px;
-    border: solid 100px rgba(255, 255, 255, 0.1);
+/* Media Queries */
+@media (max-width: 768px) {
+    #Title {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .buttonRight button {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    #Ziya {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .video-container iframe {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .footer {
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
 }
 
-.ytplayer {pointer-events: none;}
+@media (max-width: 480px) {
+    #Title {
+        font-size: 1.5rem;
+    }
 
-.footer {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-    color: white;
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    z-index: 2;
-    height: 400px;
-    /* background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
-    height: 400px;
-    width: 100%;
-    position: relative;
-    bottom: 1000px;
-    left: 100px;
-    display: flex
-;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5 100px;
-    z-index: 1;
-}
+    .buttonRight button {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
 
-hr {
-    border: solid 1px rgb(255, 157, 0);
-    width: 100%;
-    max-width: 5532px;
-    margin: 94px auto;
-    z-index: 2;
-    position: fixed;
-    left: 243px;
+    #Ziya {
+        font-size: 1.5rem;
+    }
 }
